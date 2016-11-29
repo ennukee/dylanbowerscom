@@ -20,7 +20,7 @@ body {
 .social-media {
 	height: 64px;
 	width: 64px;
-	background-size: cover;	
+	background-size: cover;
 }
 
 #linkedin {
@@ -51,17 +51,17 @@ body {
 	background-color: green;
 }
 
-ul { 
-	list-style-type: none; 
+ul {
+	list-style-type: none;
 	min-width: 450px;
 	padding: 0;
 
 	background-color: blue;
 }
 
-#algorithms a .type-icon { background-image: url('../images/portfolio/algorithms.png'); }
-#scripting a .type-icon { background-image: url('../images/portfolio/scripting.png'); }
-#web a .type-icon { background-image: url('../images/portfolio/web.png'); }
+#algorithms_index a .type-icon { background-image: url('../images/portfolio/algorithms.png'); }
+#scripting_index a .type-icon { background-image: url('../images/portfolio/scripting.png'); }
+#web_index a .type-icon { background-image: url('../images/portfolio/web.png'); }
 
 .index-redirect {
 	display: inline-block;
@@ -106,7 +106,7 @@ ul {
 }
 
 .index-redirect a:hover .type-icon {
-	transform: scale(1) ; 
+	transform: scale(1) ;
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-ms-transform: scale(1);
@@ -136,6 +136,11 @@ ul {
 	text-align: center;
 }
 
+.warning-label {
+	color: rgba(255, 0, 0, 1);
+	margin-bottom: 5px;
+}
+
 .experience {
 	background-color: rgba(50, 100, 50, 1);
 	padding: 10px;
@@ -150,6 +155,7 @@ ul {
 	background-size: cover;
 	border-radius: 4px;
 	border: 2px solid black;
+	background-color: rgba(255, 255, 255, 0.8);
 
 	-webkit-transition: all 0.25s;
 }
@@ -165,6 +171,13 @@ ul {
 }
 
 #project-euler .experience-icon { background-image: url('../images/portfolio/project_euler.png'); }
+#hpriest-sheet .experience-icon { background-image: url('../images/portfolio/holypriestcrest.png'); }
+#discord-bot .experience-icon { background-image: url('../images/portfolio/discordlogo.png'); }
+#dailyprogrammer .experience-icon { background-image: url('../images/portfolio/dailyprogrammer.png'); }
+#python-playground .experience-icon { background-image: url('../images/portfolio/scripting.svg'); }
+#umass .experience-icon {	background-image: url('../images/portfolio/umasstransit.png'); }
+#timelapse .experience-icon { background-image: url('../images/portfolio/timelapse.svg'); }
+#this-site .experience-icon { background-image: url('../images/portfolio/thissite.svg'); }
 
 .experience:nth-child(odd) {background-color: purple;}
 .experience:nth-child(even) {background-color: cyan;}
@@ -175,12 +188,12 @@ ul {
 }
 
 .experience:nth-child(even) .experience-icon {
-	/* 
+	/*
 	   Due to a weird interaction with `float: right` and margin,
 	   we have to apply a margin-right here double the origin number
-	   as to counteract the div being pushed into the side of the page 
+	   as to counteract the div being pushed into the side of the page
 	*/
-	margin-right: 20px; 
+	margin-right: 20px;
 	margin-left: 10px;
 	float: right;
 }
